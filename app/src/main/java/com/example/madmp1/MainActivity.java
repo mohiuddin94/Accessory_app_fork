@@ -17,8 +17,10 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.madmp1.databinding.ActivityMainBinding;
@@ -153,5 +155,10 @@ public class MainActivity extends AppCompatActivity {
         if (focusedView != null) {
             imm.hideSoftInputFromWindow(focusedView.getWindowToken(), 0);
         }
+    }
+    public boolean onSupportNavigateUp() {
+        // Handle the back button click (e.g., go back to the previous activity)
+        onBackPressed();
+        return true;
     }
 }

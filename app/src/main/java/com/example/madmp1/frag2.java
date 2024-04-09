@@ -66,7 +66,6 @@ public class frag2 extends Fragment {
         Marker marker = googleMap.addMarker(markerOptions);
         marker.setTag("Blitz Store");
         marker.showInfoWindow();
-//        googleMap.addMarker(new MarkerOptions().position(location).title("Blitz Store").snippet("Blitz Store"));
 
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 12));
     }
